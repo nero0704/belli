@@ -1,0 +1,25 @@
+{
+  "name": "belli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nero0704/belli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nero0704/belli/issues"
+  },
+  "homepage": "https://github.com/nero0704/belli#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "jsdom": "^19.0.0",
+    "mysql2": "^2.3.3"
+  }
+}

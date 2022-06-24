@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'S-Core';
+  src: url("/font/S-Core_Dream/SCDream5.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'S-Core';
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#general-container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 20% 80%;
+}
+
+#left-nav {
+  display: grid;
+  padding: 20px;
+  padding-top: 60px;
+  grid-template-rows: 30% 70%;
+  row-gap: 80px;
+  background-color: aqua;
+}
+
+#left-nav #logo {
+  display: grid;
+  justify-items: center;
+}
+
+#left-nav #logo img {
+  width: 90%;
+}
+
+#left-nav #menu {
+  display: grid;
+  height: fit-content;
+  margin: 0;
+  justify-items: center;
+  row-gap: 50px;
+}
+
+#left-nav #menu .menu-buttons {
+  height: fit-content;
+  width: 80%;
+  padding: 16px;
+  font-size: 28pt;
+  text-align: center;
+  border: 3px solid black;
+}
+
+#left-nav #menu .menu-buttons:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+main #main-product {
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 15% 15% 45% 18%;
+  row-gap: 20px;
+}
+
+main #main-order {
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 15% 15% 45% 18%;
+  row-gap: 20px;
+}
+
+main #main-design {
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 15% 15% 45% 18%;
+  row-gap: 20px;
+}
+
+main #main-setting {
+  display: grid;
+  padding: 30px;
+  grid-template-rows: 15% 15% 45% 18%;
+  row-gap: 20px;
+}
+
+main p {
+  height: fit-content;
+  margin: 0;
+}
