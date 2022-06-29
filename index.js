@@ -50,6 +50,10 @@ app.get("/shop-configuration-button", (req, res) => {
   res.send(doc);
 })
 
+app.get("/product-configuration", (req, res) => {
+  res.send(fs.readFileSync("./app/html/product_configuration.html", "utf-8"));
+})
+
 // RUN SERVER
 let port = 8000;
 app.listen(port);

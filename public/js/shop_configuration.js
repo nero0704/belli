@@ -20,10 +20,26 @@ ready(function() {
     xhr.send();
   }
 
+  ajaxGET("/shop-configuration-button?format=product", function(data) {
+    document.querySelector("main").innerHTML = data;
+    let products = document.getElementsByClassName("products");
+    for (let i = 0; i < products.length; i++) {
+      products[i].addEventListener("click", () => {
+        location.pathname = "/product-configuration";
+      })
+    }
+  });
+
   document.getElementById("button-product").addEventListener("click", (e) => {
     ajaxGET("/shop-configuration-button?format=product", function(data) {
       document.querySelector("main").innerHTML = data;
-    });
+      let products = document.getElementsByClassName("products");
+      for (let i = 0; i < products.length; i++) {
+        products[i].addEventListener("click", () => {
+          location.pathname = "/product-configuration";
+        })
+      }
+    })
   });
 
   document.getElementById("button-order").addEventListener("click", (e) => {
@@ -43,7 +59,6 @@ ready(function() {
       document.querySelector("main").innerHTML = data;
     });
   });
-
 });
 
 // process the callback function

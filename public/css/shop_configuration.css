@@ -63,30 +63,110 @@ body {
 
 main #main-product {
   display: grid;
+  height: 100%;
   padding: 30px;
-  grid-template-rows: 15% 15% 45% 18%;
+  grid-template-rows: 15% auto;
   row-gap: 20px;
 }
 
+main #main-product #product-search {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-product #product-list {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-product #product-list .products {
+  display: flex;
+  height: 100px;
+  gap: 10px;
+}
+
+main #main-product #product-list .products img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+main #main-product #product-list .products p {
+  align-self: center;
+}
+
 main #main-order {
-  display: grid;
+  height: 100%;
   padding: 30px;
-  grid-template-rows: 15% 15% 45% 18%;
-  row-gap: 20px;
+}
+
+main #main-order #order-list {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-order #order-list .orders {
+  display: flex;
+  height: 70px;
+  background-color: white;
+}
+
+main #main-order #order-list .orders p {
+  align-self: center;
 }
 
 main #main-design {
   display: grid;
+  height: 100%;
   padding: 30px;
   grid-template-rows: 15% 15% 45% 18%;
   row-gap: 20px;
 }
 
+main #main-design #design-banner {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-design #design-logo {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-design #design-info {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-design #design-unknown {
+  background-color: rgb(167, 167, 167);
+}
+
 main #main-setting {
   display: grid;
+  height: 100%;
   padding: 30px;
-  grid-template-rows: 15% 15% 45% 18%;
+  grid-template-columns: auto auto;
   row-gap: 20px;
+  column-gap: 20px;
+}
+
+main #main-setting #setting-shipping {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-setting #setting-promotion {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-setting #setting-payment {
+  background-color: rgb(167, 167, 167);
+}
+
+main #main-setting #setting-refund {
+  background-color: rgb(167, 167, 167);
 }
 
 main p {
