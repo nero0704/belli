@@ -12,103 +12,83 @@ body {
   margin: 0;
 }
 
-.sticky {
-  position: fixed;
-  top: 20px;
-  width: 100%;
-}
-
-#cart {
-  display: grid;
-  right: 30px;
-  top: 40px;
-  position: absolute;
-  row-gap: 10px;
-  z-index: 2;
-}
-
-#cart #logo-main img {
-  width: 80px;
-}
-
-#cart #cart-item-list {
-  display: grid;
-  justify-items: center;
-  row-gap: 10px;
-}
-
-#cart #cart-item-list .cart-item img {
-  width: 40px;
-}
-
 #general-container {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 25% 75%;
+  row-gap: 20px;
 }
 
-#left-menu {
+#logo {
   display: grid;
-  grid-template-rows: 350px auto;
-}
-
-#left-menu #logo {
-  display: grid;
+  margin: 20px 0;
   justify-items: center;
-  align-items: center;
 }
 
-#left-menu #logo img {
-  width: 250px;
+#logo img {
+  width: 200px;
 }
 
-#left-menu #info {
-  background-color: yellow;
-}
-
-main {
+#top-menu {
   display: grid;
-  row-gap: 40px;
-  overflow-y: scroll;
-}
-
-main #top-menu {
-  display: grid;
-  position: sticky;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: baseline;
 }
 
-main #top-menu .top-menu-buttons {
+#top-menu .top-menu-buttons {
   padding: 5px 15px;
   border: 2px solid black;
   border-radius: 5px;
   background-color: green;
 }
 
-main #top-menu .top-menu-buttons:hover {
+#top-menu .top-menu-buttons:hover {
   cursor: pointer;
   background-color: white;
 }
 
-main #banner {
+#banner-top {
   height: 350px;
   background-color: blue;
 }
 
-main #banner img {
+#banner-top img {
   height: 100%;
   width: 100%;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-template-areas: "shop-menu shop-menu" "ad banner-bottom";
+  row-gap: 40px;
+}
+
 main #shop-menu {
   display: grid;
+  height: 200px;
+  margin: 40px 0;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 40px;
+  grid-area: shop-menu;
   justify-items: center;
 }
 
 main #shop-menu .shop-menu-buttons img {
-  width: 170px;
+  width: 200px;
+}
+
+main #ad {
+  display: grid;
+  grid-area: ad;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 80px;
+  justify-items: center;
+}
+
+main #ad .ad-items img {
+  width: 120px;
+}
+
+main #banner-bottom {
+  grid-area: banner-bottom;
+  background-color: blue;
 }
