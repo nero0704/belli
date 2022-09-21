@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: ();
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#general-container {
+  display: grid;
+  row-gap: 20px;
+}
+
+#logo {
+  display: grid;
+  margin: 20px 0;
+  justify-items: center;
+}
+
+#logo img {
+  width: 200px;
+}
+
+#top-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: baseline;
+}
+
+#top-menu .top-menu-buttons {
+  padding: 5px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: green;
+}
+
+#top-menu .top-menu-buttons:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+#banner-top {
+  height: 350px;
+  background-color: blue;
+}
+
+#banner-top img {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 66% 34%;
+  grid-template-areas: "shop-menu shop-menu" "ad banner-bottom";
+  row-gap: 40px;
+}
+
+main #shop-menu {
+  display: grid;
+  height: 200px;
+  margin: 40px 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-area: shop-menu;
+  justify-items: center;
+}
+
+main #shop-menu .shop-menu-buttons img {
+  width: 200px;
+}
+
+main #ad {
+  display: grid;
+  grid-area: ad;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 80px;
+  justify-items: center;
+}
+
+main #ad .ad-items img {
+  width: 120px;
+}
+
+main #banner-bottom {
+  grid-area: banner-bottom;
+  background-color: blue;
+}
